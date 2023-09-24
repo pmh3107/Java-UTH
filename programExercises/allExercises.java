@@ -18,30 +18,28 @@ public class allExercises {
         System.out.println("(0). _ Exit_");
         System.out.println(" Please input one of programming exercises (0 to 6):");
         int selection = scanner.nextInt();
-        if (selection > 5) {
-            System.out.println("Wrong input !!");
-        } else {
-            switch (selection) {
-                case 1:
-                    allExercises.sum_n();
-                    break;
-                case 2:
-                    allExercises.nFactorial();
-                    break;
-                case 3:
-                    allExercises.checkN();
-                    break;
-                case 4:
-                    allExercises.floralText();
-                    break;
-                case 5:
-                    allExercises.ioTransfer();
-                    break;
-                case 0:
-                    break;
-            }
+        switch (selection) {
+            case 1:
+                allExercises.sum_n();
+                break;
+            case 2:
+                allExercises.nFactorial();
+                break;
+            case 3:
+                allExercises.checkN();
+                break;
+            case 4:
+                allExercises.floralText();
+                break;
+            case 5:
+                allExercises.ioTransfer();
+                break;
+            case 0:
+                break;
+            default:
+                System.out.println("Wrong input !!");
+                break;
         }
-
     }
 
     public static void sum_n() {
